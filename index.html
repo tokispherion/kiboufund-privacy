@@ -461,6 +461,12 @@
           device's private app storage. No data is transmitted to our servers or
           any third party because <strong>we have no servers</strong>.
         </p>
+        <p>
+          The only network request KIBŌFUND makes is a check, on launch, for
+          whether a newer version of the app is available. This fetches a small
+          static file and does not send any personal, budget, or device data —
+          see <strong>Third-Party Services</strong> below.
+        </p>
       </div>
 
       <!-- Data Storage -->
@@ -489,6 +495,13 @@
           KIBŌFUND does not integrate with any analytics, advertising, or
           tracking services. No third-party SDKs that collect user data are
           included in the app.
+        </p>
+        <p>
+          The app also checks, on launch, whether a newer version is available
+          by requesting a small static file hosted on GitHub Pages. This
+          request does not include any personal, budget, or app data — it is
+          a standard, read-only HTTP request, the same as loading any web
+          page. We do not receive, log, or store anything from it.
         </p>
       </div>
 
